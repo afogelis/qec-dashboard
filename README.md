@@ -10,7 +10,7 @@ browsable views:
 - **Decoder performance** — leaderboard and accuracy/runtime trade-off.
 - **Run explorer** — filter and export the raw run records.
 
-This is the tooling and observability repo of the portfolio (repo 3 of a seven-part
+This is the tooling and observability repo of the portfolio (repo 3 of a ten-part
 [QEC research portfolio](https://github.com/afogelis/qec-portfolio)). It is a **visualization layer,
 not a research result**: it contains no new physics and recomputes nothing, but demonstrates clean
 data contracts and a deployable demo over the artifacts the other repos produce. It is intentionally
