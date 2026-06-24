@@ -12,8 +12,8 @@ browsable views:
 
 This is the tooling and observability repo of the portfolio (repo 3 of a ten-part
 [QEC research portfolio](https://github.com/afogelis/qec-portfolio)). It is a **visualization layer,
-not a research result**: it contains no new physics and recomputes nothing, but demonstrates clean
-data contracts and a deployable demo over the artifacts the other repos produce. It is intentionally
+not a research result**: it contains no new physics and recomputes nothing, but provides JSON
+data contracts and a deployable view over the artifacts the other repos produce. It is intentionally
 decoupled from the simulators, consuming JSON artifacts produced by
 [`surface-code-simulator`](https://github.com/afogelis/surface-code-simulator) and
 [`decoder-benchmark`](https://github.com/afogelis/decoder-benchmark) the same way an observability
@@ -25,10 +25,10 @@ stack reads metrics emitted by upstream pipelines.
 
 *Overview tab running on the bundled sample data: summary metrics and the logical-vs-physical error-rate curves by code distance, with the estimated threshold marked.*
 
-## What this demonstrates
+## Scope
 
-- **Operational metrics / observability:** turning raw simulation output into decision-ready views, the same skillset behind market-surveillance and operational dashboards — only the data now comes from quantum simulations.
-- **Clean data contracts:** the dashboard depends only on JSON schemas, not on the heavy simulation stack, so it stays fast and easy to deploy.
+- **Operational metrics / observability:** turning raw simulation output into browsable views over metrics emitted by upstream jobs.
+- **JSON data contracts:** the dashboard depends only on JSON schemas, not on the simulation stack, so it stays fast and easy to deploy.
 
 ## Install and run
 
