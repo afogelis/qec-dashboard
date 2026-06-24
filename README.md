@@ -10,11 +10,17 @@ error-correction operations team would actually watch:
 - **Decoder performance** — leaderboard and accuracy/runtime trade-off.
 - **Run explorer** — filter and export the raw run records.
 
-This is repo 3 of a seven-part [QEC research portfolio](../README.md). It is intentionally
+This is repo 3 of a seven-part [QEC research portfolio](https://github.com/afogelis/qec-portfolio). It is intentionally
 decoupled from the simulators: it consumes JSON artifacts produced by
 [`surface-code-simulator`](https://github.com/afogelis/surface-code-simulator) and
 [`decoder-benchmark`](https://github.com/afogelis/decoder-benchmark), the same way a production
 observability stack reads metrics emitted by upstream pipelines rather than recomputing them.
+
+## Screenshot
+
+![QEC dashboard overview tab: code-distance summary metrics and logical-vs-physical error-rate curves with the threshold marked.](docs/dashboard_overview.png)
+
+*Overview tab running on the bundled sample data: summary metrics and the logical-vs-physical error-rate curves by code distance, with the estimated threshold marked.*
 
 ## What this demonstrates
 
