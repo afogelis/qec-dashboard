@@ -32,7 +32,9 @@ def generate(out_dir: str | Path = DEFAULT_OUT, *, shots: int = 20_000, seed: in
     distances = [3, 5, 7]
     error_rates = [0.005, 0.008, 0.01, 0.012, 0.015]
 
-    threshold = run_threshold_sweep(distances=distances, error_rates=error_rates, shots=shots, seed=seed)
+    threshold = run_threshold_sweep(
+        distances=distances, error_rates=error_rates, shots=shots, seed=seed
+    )
     (out_dir / "threshold.json").write_text(threshold.model_dump_json(indent=2), encoding="utf-8")
 
     benchmark = run_benchmark(
@@ -49,7 +51,9 @@ def generate(out_dir: str | Path = DEFAULT_OUT, *, shots: int = 20_000, seed: in
     entries = []
     for distance in [3, 5]:
         for p in [0.005, 0.01, 0.02]:
-            config = ExperimentConfig(distance=distance, rounds=distance, p=p, shots=shots, seed=seed)
+            config = ExperimentConfig(
+                distance=distance, rounds=distance, p=p, shots=shots, seed=seed
+            )
             circuit = build_surface_code_circuit(config)
             sample = sample_syndromes(circuit, shots=shots, seed=seed)
             density = syndrome_density(sample)
@@ -63,7 +67,9 @@ def generate(out_dir: str | Path = DEFAULT_OUT, *, shots: int = 20_000, seed: in
                     "density": [float(value) for value in density],
                 }
             )
-    (out_dir / "syndrome.json").write_text(json.dumps({"entries": entries}, indent=2), encoding="utf-8")
+    (out_dir / "syndrome.json").write_text(
+        json.dumps({"entries": entries}, indent=2), encoding="utf-8"
+    )
     print(f"wrote threshold.json, benchmark.json, syndrome.json to {out_dir}")
 
 

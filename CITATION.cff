@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "QEC Metrics Dashboard"
+abstract: "An operational dashboard for quantum error correction simulation metrics: physical/logical error rates, syndrome statistics, decoder performance and code-distance effects."
+type: software
+authors:
+  - family-names: "Fogelis"
+    given-names: "Andrew"
+version: "0.1.0"
+date-released: "2026-06-23"
+license: MIT
+repository-code: "https://github.com/afogelis/qec-dashboard"
+keywords:
+  - quantum-error-correction
+  - dashboard
+  - streamlit
+  - observability

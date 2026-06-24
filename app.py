@@ -13,7 +13,6 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
@@ -185,9 +184,7 @@ def main() -> None:
         st.stop()
     bundle = _load(data_dir)
 
-    tabs = st.tabs(
-        ["Overview", "Distance effects", "Syndrome stats", "Decoders", "Run explorer"]
-    )
+    tabs = st.tabs(["Overview", "Distance effects", "Syndrome stats", "Decoders", "Run explorer"])
     with tabs[0]:
         render_overview(bundle)
     with tabs[1]:
