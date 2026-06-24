@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qec-dashboard"
+version = "0.1.0"
+description = "An operational dashboard for quantum error correction simulation metrics: physical/logical error rates, syndrome statistics, decoder performance and code-distance effects."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Andrew Fogelis" }]
+keywords = ["quantum-error-correction", "dashboard", "streamlit", "observability"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "streamlit>=1.30",
+    "plotly>=5.18",
+    "pydantic>=2.5",
+]
+
+[project.optional-dependencies]
+# Optional: regenerate the bundled sample data from the simulator/benchmark repos.
+generate = [
+    "surface-code-simulator @ git+https://github.com/afogelis/surface-code-simulator.git@v0.1.0",
+    "decoder-benchmark @ git+https://github.com/afogelis/decoder-benchmark.git@v0.1.0",
+]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+qecdash-data = "qecdash.sample_data:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.coverage.run]
+source = ["qecdash"]

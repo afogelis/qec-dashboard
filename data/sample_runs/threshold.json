@@ -1,0 +1,140 @@
+{
+  "points": [
+    {
+      "distance": 3,
+      "p": 0.005,
+      "logical_error_rate": 0.01475,
+      "ci_low": 0.012331649462498609,
+      "ci_high": 0.017634143844960648,
+      "num_shots": 8000,
+      "num_failures": 118
+    },
+    {
+      "distance": 3,
+      "p": 0.008,
+      "logical_error_rate": 0.041875,
+      "ci_low": 0.0377011633004915,
+      "ci_high": 0.04648859261703507,
+      "num_shots": 8000,
+      "num_failures": 335
+    },
+    {
+      "distance": 3,
+      "p": 0.01,
+      "logical_error_rate": 0.053125,
+      "ci_low": 0.04842125795089371,
+      "ci_high": 0.05825769904914926,
+      "num_shots": 8000,
+      "num_failures": 425
+    },
+    {
+      "distance": 3,
+      "p": 0.012,
+      "logical_error_rate": 0.0825,
+      "ci_low": 0.07666966599669074,
+      "ci_high": 0.08873109382992282,
+      "num_shots": 8000,
+      "num_failures": 660
+    },
+    {
+      "distance": 3,
+      "p": 0.015,
+      "logical_error_rate": 0.114875,
+      "ci_low": 0.10807163233565031,
+      "ci_high": 0.12204805060620491,
+      "num_shots": 8000,
+      "num_failures": 919
+    },
+    {
+      "distance": 5,
+      "p": 0.005,
+      "logical_error_rate": 0.01575,
+      "ci_low": 0.013244862739531708,
+      "ci_high": 0.01871997066415123,
+      "num_shots": 8000,
+      "num_failures": 126
+    },
+    {
+      "distance": 5,
+      "p": 0.008,
+      "logical_error_rate": 0.049125,
+      "ci_low": 0.04460154458197988,
+      "ci_high": 0.054081252033168374,
+      "num_shots": 8000,
+      "num_failures": 393
+    },
+    {
+      "distance": 5,
+      "p": 0.01,
+      "logical_error_rate": 0.08775,
+      "ci_low": 0.08174630654639979,
+      "ci_high": 0.09414941378538809,
+      "num_shots": 8000,
+      "num_failures": 702
+    },
+    {
+      "distance": 5,
+      "p": 0.012,
+      "logical_error_rate": 0.119625,
+      "ci_low": 0.11269564252229973,
+      "ci_high": 0.12691948087661792,
+      "num_shots": 8000,
+      "num_failures": 957
+    },
+    {
+      "distance": 5,
+      "p": 0.015,
+      "logical_error_rate": 0.19225,
+      "ci_low": 0.18376326742731172,
+      "ci_high": 0.20103214295985075,
+      "num_shots": 8000,
+      "num_failures": 1538
+    },
+    {
+      "distance": 7,
+      "p": 0.005,
+      "logical_error_rate": 0.01,
+      "ci_low": 0.008042727647289792,
+      "ci_high": 0.012427625203106986,
+      "num_shots": 8000,
+      "num_failures": 80
+    },
+    {
+      "distance": 7,
+      "p": 0.008,
+      "logical_error_rate": 0.055375,
+      "ci_low": 0.05057330590697966,
+      "ci_high": 0.06060349130956659,
+      "num_shots": 8000,
+      "num_failures": 443
+    },
+    {
+      "distance": 7,
+      "p": 0.01,
+      "logical_error_rate": 0.102875,
+      "ci_low": 0.09640737884295697,
+      "ci_high": 0.10972382294421407,
+      "num_shots": 8000,
+      "num_failures": 823
+    },
+    {
+      "distance": 7,
+      "p": 0.012,
+      "logical_error_rate": 0.167625,
+      "ci_low": 0.1595996826838255,
+      "ci_high": 0.17596936533382887,
+      "num_shots": 8000,
+      "num_failures": 1341
+    },
+    {
+      "distance": 7,
+      "p": 0.015,
+      "logical_error_rate": 0.26725,
+      "ci_low": 0.25766633736823374,
+      "ci_high": 0.27705708023570463,
+      "num_shots": 8000,
+      "num_failures": 2138
+    }
+  ],
+  "threshold_estimate": 0.0064375000000000005
+}
