@@ -1,8 +1,8 @@
 # QEC Dashboard
 
-An operational dashboard for quantum error correction simulations, built with Streamlit. It reads
-metric artifacts emitted by the upstream simulation and benchmark jobs and presents the numbers an
-error-correction operations team would actually watch:
+An interactive **artifact viewer** for quantum-error-correction simulations, built with Streamlit. It
+reads metric artifacts emitted by the upstream simulation and benchmark jobs and presents them as
+browsable views:
 
 - **Physical vs logical error rates** by code distance, with the threshold marked.
 - **Code distance effects** — logical error rate vs distance at a chosen physical rate.
@@ -10,11 +10,14 @@ error-correction operations team would actually watch:
 - **Decoder performance** — leaderboard and accuracy/runtime trade-off.
 - **Run explorer** — filter and export the raw run records.
 
-This is repo 3 of a seven-part [QEC research portfolio](https://github.com/afogelis/qec-portfolio). It is intentionally
-decoupled from the simulators: it consumes JSON artifacts produced by
+This is the tooling and observability repo of the portfolio (repo 3 of a seven-part
+[QEC research portfolio](https://github.com/afogelis/qec-portfolio)). It is a **visualization layer,
+not a research result**: it contains no new physics and recomputes nothing, but demonstrates clean
+data contracts and a deployable demo over the artifacts the other repos produce. It is intentionally
+decoupled from the simulators, consuming JSON artifacts produced by
 [`surface-code-simulator`](https://github.com/afogelis/surface-code-simulator) and
-[`decoder-benchmark`](https://github.com/afogelis/decoder-benchmark), the same way a production
-observability stack reads metrics emitted by upstream pipelines rather than recomputing them.
+[`decoder-benchmark`](https://github.com/afogelis/decoder-benchmark) the same way an observability
+stack reads metrics emitted by upstream pipelines.
 
 ## Screenshot
 
